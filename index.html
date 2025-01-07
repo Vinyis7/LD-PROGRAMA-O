@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logo YouTube</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      color: #282828;
+    }
+
+    .logo .play-button {
+      width: 50px;
+      height: 35px;
+      background-color: #FF0000;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+    }
+
+    .logo .play-button::before {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 0 10px 15px;
+      border-color: transparent transparent transparent #fff;
+    }
+
+    .logo .text {
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <div class="play-button"></div>
+    <div class="text">YouTube</div>
+  </div>
+</body>
+</html>
